@@ -20,8 +20,6 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.city,
     });
-
-    console.log(weatherData)
   }
 
   function handleSubmit(event) {
@@ -48,22 +46,25 @@ export default function Weather(props) {
               <input
                 type="search"
                 placeholder="Enter a city.."
-                className="form-control"
+                className="form-control search-input"
                 autoFocus="on"
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-3">
+            <div className="col-3 p-0">
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100"
+                className="btn btn-secondary w-100"
               />
             </div>
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast coordinates={weatherData.coordinates} />
+        <WeatherForecast
+          coordinates={weatherData.coordinates}
+          city={weatherData.city}
+        />
       </div>
     );
   } else {

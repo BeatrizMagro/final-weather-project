@@ -1,14 +1,24 @@
 .Weather {
-  font-family: arial, sans-serif;
-  border: 1px solid #dadde1;
-  padding: 16px;
-  border-radius: 4px;
-  color: rgb(135, 135, 135);
+  font-family: "Fjalla One", sans-serif;
+  border: 1px solid rgb(102, 128, 163);
+  border-width: 4px;
+  font-weight: bold;
+  padding: 28px;
+  box-shadow: 12px 12px 2px 1px rgba(102, 128, 163, 0.6);
+  color: white;
+  letter-spacing: 2;
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("weather.jpeg");
 }
 
 .Weather h1 {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 50;
+  font-weight: 800;
   margin: 20px 0 0 0;
   line-height: 29px;
 }
@@ -27,8 +37,8 @@
 
 .Weather .temperature {
   font-weight: bold;
-  color: rgb(33, 33, 33);
-  font-size: 64px;
+  color: white;
+  font-size: 55px;
   line-height: 64px;
   margin-left: 5px;
   font-weight: 400;
@@ -40,10 +50,10 @@
 }
 
 .Weather .unit {
-  color: rgb(33, 33, 33);
   font-size: 16px;
   font-weight: 400;
   position: relative;
   line-height: 1;
   top: -34px;
+  color: white;
 }
